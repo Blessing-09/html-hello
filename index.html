@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram page using bootstrap</title>
+   
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">            
+                <span class="navbar-toggler-icon"></span>        
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">           
+                 <!-- <div class="d-flex gap-2"></div> -->
+            
+            <i class="d-inline-block align-text-top fa-brands fa-instagram navbar-brand"> 
+                <span class="fs-5 fw-bold font-monospace">Instagram</span>
+            </i>
+            <div>
+            <button type="button" class="btn btn-success p-1" data-bs-toggle="modal" data-bs-target="#newPost">Create a new post</button>
+            <div class="modal fade" id="newPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLabel">Create a new post</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here..."></textarea>
+                        </div>
+                    </form>
+                    <i class="fa-solid fa-camera border rounded p-2"></i>
+                    <i class="fa-solid fa-location-dot border rounded px-2 py-2"></i>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+                    <button type="button" class="btn btn-secondary p-1"><i class="fa-solid fa-gear "></i></button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                    <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReference">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    </nav>
+
+    <div class="container mt-5">
+        <ul class="justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells text-secondary"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square text-secondary"></i></button>
+            </li>
+        </ul>
+    </div>
+  
+            <div class="tab-content" id="pills-tabContent">
+            
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container">
+                <div class="row g-1 my-1">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <img src="https://picsum.photos/200/300?random=1" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=2" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <img src="https://picsum.photos/200/300?random=3" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+            <div class="row g-1 my-1">
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=4" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=5" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=6" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+            <div class="row g-1 my-1">
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=7" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=8" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 ">
+                    <img src="https://picsum.photos/200/300?random=9" alt="DSF9040" class=" img-fluid w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+            </div>
+            </div>
+            
+            
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class=" main1 container px-0 rounded"   style="width:420px; border:1px ridge black; box-sizing: content-box;">
+                    <div class="post-header d-flex justify-content-between align-items-center" style="width: 420px; padding: 10px 12px 0px 12px; margin-bottom: 4px;">
+                        <div class="header-main d-flex justify-content-center">
+                            <div class="header-icon" style="font-size: 25px;">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="header-text d-flex flex-column" style="margin-left: 8px;" >
+                                <h5  style="font-size: 12px; margin-bottom: 0px;"><b>HTML5</b></h5>
+                                <p  style="font-size: 13px; margin-bottom: 0px;">Instagram</p>
+                            </div>
+                        </div>
+                        <div class="header-dots" style="font-size: 25px;">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                
+                    <div class="post-img" style="width:420px; height:400px;">
+                        <img src="https://picsum.photos/200/300?random=1" alt="A man on the streets of Marrakesh" style="object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                
+                    <div class="post-icons d-flex justify-content-between align-items-center" style="width:420px; padding: 10px 12px;">
+                        <div class="icons">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-bookmark"></i>  
+                        </div>
+                    </div>
+                
+                    <div class="post-body" style="margin-top: -15px; padding-left: 10px;" >
+                        <p style="font-size: 12px; margin-top: 10px;">
+                            Liked by <b>4GeeksAcademy</b>, <b>html5</b>, <b>Web</b> and <b>100,000 others</b>
+                        </p>
+                        <p style="font-size: 15px; margin-top: -10px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore ex sapiente eum corporis velit dolorum expedita sunt esse corrupti accusamus a delectus, debitis iste in dolor quaerat repellat repudiandae.
+                        </p>
+                
+                    </div>
+                
+                
+                  </div>  
+                  <div class="main2 mt-2 container px-0 rounded"   style="width:420px; border:1px ridge black; box-sizing: content-box;">
+                    <div class="post-header d-flex justify-content-between align-items-center" style="width: 420px; padding: 10px 12px 0px 12px; margin-bottom: 4px;">
+                        <div class="header-main d-flex justify-content-center">
+                            <div class="header-icon" style="font-size: 25px;">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="header-text d-flex flex-column" style="margin-left: 8px;" >
+                                <h5  style="font-size: 12px; margin-bottom: 0px;"><b>HTML5</b></h5>
+                                <p  style="font-size: 13px; margin-bottom: 0px;">Instagram</p>
+                            </div>
+                        </div>
+                        <div class="header-dots" style="font-size: 25px;">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                
+                    <div class="post-img" style="width:420px; height:400px;">
+                        <img src="https://picsum.photos/200/300?random=2" alt="A man on the streets of Marrakesh" style="object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                
+                    <div class="post-icons d-flex justify-content-between align-items-center" style="width:420px; padding: 10px 12px;">
+                        <div class="icons">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-bookmark"></i>  
+                        </div>
+                    </div>
+                
+                    <div class="post-body" style="margin-top: -15px; padding-left: 10px;" >
+                        <p style="font-size: 12px; margin-top: 10px;">
+                            Liked by <b>4GeeksAcademy</b>, <b>html5</b>, <b>Web</b> and <b>100,000 others</b>
+                        </p>
+                        <p style="font-size: 15px; margin-top: -10px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet sit similique alias quidem voluptatibus esse. Ipsa aut earum praesentium! Eaque tempore pariatur aspernatur ducimus deserunt, debitis adipisci repellendus aliquid doloribus.
+                        </p>
+                
+                    </div>
+                
+                
+                  </div>  
+                  <div class=" main3 mt-2 container px-0 rounded"   style="width:420px; border:1px ridge black; box-sizing: content-box;">
+                    <div class="post-header d-flex justify-content-between align-items-center" style="width: 420px; padding: 10px 12px 0px 12px; margin-bottom: 4px;">
+                        <div class="header-main d-flex justify-content-center">
+                            <div class="header-icon" style="font-size: 25px;">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="header-text d-flex flex-column" style="margin-left: 8px;" >
+                                <h5  style="font-size: 12px; margin-bottom: 0px;"><b>HTML5</b></h5>
+                                <p  style="font-size: 13px; margin-bottom: 0px;">Instagram</p>
+                            </div>
+                        </div>
+                        <div class="header-dots" style="font-size: 25px;">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                
+                    <div class="post-img" style="width:420px; height:400px;">
+                        <img src="https://picsum.photos/200/300?random=3" alt="A man on the streets of Marrakesh" style="object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                
+                    <div class="post-icons d-flex justify-content-between align-items-center" style="width:420px; padding: 10px 12px;">
+                        <div class="icons">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-bookmark"></i>  
+                        </div>
+                    </div>
+                
+                    <div class="post-body" style="margin-top: -15px; padding-left: 10px;" >
+                        <p style="font-size: 12px; margin-top: 10px;">
+                            Liked by <b>4GeeksAcademy</b>, <b>html5</b>, <b>Web</b> and <b>100,000 others</b>
+                        </p>
+                        <p style="font-size: 15px; margin-top: -10px;">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, aspernatur rem. Odio, animi ea? Sed quisquam ducimus repellat dicta quasi quos voluptatum illum cumque laborum velit, dolorum non vitae ut.
+                        </p>
+                
+                    </div>
+                
+                
+                  </div>  
+                  <div class="main4 mt-2 container px-0 rounded"   style="width:420px; border:1px ridge black; box-sizing: content-box;">
+                    <div class="post-header d-flex justify-content-between align-items-center" style="width: 420px; padding: 10px 12px 0px 12px; margin-bottom: 4px;">
+                        <div class="header-main d-flex justify-content-center">
+                            <div class="header-icon" style="font-size: 25px;">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="header-text d-flex flex-column" style="margin-left: 8px;" >
+                                <h5  style="font-size: 12px; margin-bottom: 0px;"><b>HTML5</b></h5>
+                                <p  style="font-size: 13px; margin-bottom: 0px;">Instagram</p>
+                            </div>
+                        </div>
+                        <div class="header-dots" style="font-size: 25px;">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                
+                    <div class="post-img" style="width:420px; height:400px;">
+                        <img src="https://picsum.photos/200/300?random=4" alt="A man on the streets of Marrakesh" style="object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                
+                    <div class="post-icons d-flex justify-content-between align-items-center" style="width:420px; padding: 10px 12px;">
+                        <div class="icons">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-bookmark"></i>  
+                        </div>
+                    </div>
+                
+                    <div class="post-body" style="margin-top: -15px; padding-left: 10px;" >
+                        <p style="font-size: 12px; margin-top: 10px;">
+                            Liked by <b>4GeeksAcademy</b>, <b>html5</b>, <b>Web</b> and <b>100,000 others</b>
+                        </p>
+                        <p style="font-size: 15px; margin-top: -10px;">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem magnam doloribus, quibusdam ullam quisquam neque illo veritatis dolores, minima minus maxime tempora animi dolor blanditiis voluptate iusto totam assumenda.
+                        </p>
+                
+                    </div>
+                
+                
+                  </div>  
+            </div>
+
+            </div>
+            
+       
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
